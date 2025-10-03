@@ -11,6 +11,12 @@ class DB:
 
     def get_all_users(self):
         with self.engine.connect() as conn:
+            query = select(User)
+            result = pd.read_sql_query(sql=query, con=conn)
+            return result
+
+    def get_user_settings(self):
+        with self.engine.connect() as conn:
             query = select(User.name, User.email_addr, User.min_thresh_c, User.max_thresh_c)
             result = pd.read_sql_query(sql=query, con=conn)
             return result
