@@ -6,6 +6,12 @@ Python module to enable interactivity with the Postgres database. This module is
 <div align="center">
   <img src="img/arch.png" alt="application responsibility" width="800">
   <div><em>System Architecture</em></div>
+  <br>
+</div>
+
+<div align="center">
+  <img src="img/schema.png" alt="application responsibility" width="400">
+  <div><em>Tables</em></div>
 </div>
 
 ## Responsibilities
